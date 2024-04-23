@@ -1,0 +1,33 @@
+/* Estilos para el contenedor de botones */
+#pagina-contacto .contenedor-botones {
+    display: flex;
+    flex-wrap: wrap; /* Si se achica mucho el contenido se acomoda en columnas */
+    justify-content: center; /* Centrar los botones */
+    width: 100%;
+    margin-top: 15px; /* Espacio entre los campos y los botones */
+    background-color: brown;
+    padding: 10px; /* Espacio interno para los botones */
+}
+
+#pagina-contacto .contenedor-botones button {
+    font-weight: bold; 
+    flex: 6 0 10%; /* 1 crecimiento 2 decrecimiento 3 valor de base del boton */
+    margin: 0 10% 0 10%; /* Espacio entre los botones */
+    text-align: center; /* Centro el texto dentro de los botones */
+}
+
+
+#pagina-contacto .nombre-apellido,
+#pagina-contacto .email-telefono {
+    text-align: center;
+    align-items: center;
+    background-color: grey; /* Color de fondo */
+    display: flex; /* Mostrar los elementos en línea */
+    flex-wrap: wrap; /* si es muy chica la web, se baja el contenido a columnas */
+    margin: 15px 10px; /* Espacio superior e inferior */
+}
+
+#pagina-contacto .labels-contacto {
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre los labels */
+}

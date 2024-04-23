@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../estilos2.css">
+    <script src="../Script.js"></script>
+</head>
+<body id="pagina-contacto">
+    <h1>Ponete en contacto con nosotros</h1>
+
+<form>
+    <div class="nombre-apellido">
+        <div>
+            <label for="nombre" class="labels-contacto">Nombre</label>
+            <input type="text" placeholder="Nombre" value="" id="nombre" required>
+        </div>
+        <div>
+            <label for="apellido" class="labels-contacto">Apellido</label>
+            <input type="text" placeholder="Apellido" value="" id="apellido" required>
+        </div>
+    </div>
+
+    <div class="email-telefono">
+        <div>
+            <label for="email" class="labels-contacto">Email</label>
+            <input type="email" placeholder="Email" value="" id="email" required>
+        </div>
+        <div>
+            <label for="telefono" class="labels-contacto">Teléfono</label>
+            <input type="text" placeholder="+541112345678" value="" id="telefono" required>
+        </div>
+    </div>
+
+    <div>
+        <label for="consulta" class="labels-contacto">Consulta</label>
+        <textarea name="" placeholder="Ingrese su consulta" id="consulta" required></textarea>
+    </div>
+
+    <div>
+        <label for="agendar" class="labels-contacto">¿Desea agendar una reunión?</label>
+        <input type="radio" name="agendar" value="si" id="agendar_si"> Sí
+        <input type="radio" name="agendar" value="no" id="agendar_no"> No
+    </div>
+
+    <div id="fecha_container" style="display: none;">
+        <label for="fecha" class="labels-contacto">Fecha de la reunión</label>
+        <input type="date" id="fecha">
+    </div>
+
+    <div class="contenedor-botones">
+        <button type="button" name="enviar" value="Enviar">Enviar</button>
+        <button type="reset" name="reset" value="Borrar">Borrar</button>
+    </div>
+</form>
+
+</body>
+<footer> 
+
+</footer>
+</html>

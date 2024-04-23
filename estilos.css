@@ -189,3 +189,11 @@ ul{
     border: none;
     color: #fff;
 }
+
+
+#pagina-contacto h1 {
+    text-decoration: underline; /* Subrayado solo en las palabras */
+    display: inline-block; /* Hacer que el h1 se comporte como un bloque en línea */
+    text-align: center; /* Centrar en la línea de la página */
+    background-color: blue;
+}
