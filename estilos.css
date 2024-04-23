@@ -2,12 +2,12 @@ body{
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 3fr ;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr 2fr;
     grid-template-areas: 
     'head head '
     'main main' 
     'footer footer' ;
-    
+  
 }
 header{
     margin-top: 0;
@@ -21,7 +21,6 @@ header{
 .menu{
     text-decoration: none;
     color: black;
-
     margin-right: 20px;
 }
 .menu:hover{
@@ -34,28 +33,6 @@ header{
     margin-right: 80px
     ;
 }
-
-
-footer{
-    background-color: rgb(175, 224, 240);
-    color: white;
-    text-align: center;
-    padding-top: 40px;
-    grid-area: footer;
-    border-radius: 10px;
-    grid-area: footer ;
-}
-main{
-    grid-area: main ;
-    background-image: url(./img/aire.jpg) ;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 0.5;
-  
-   
-}
-
 .nav_contacto{
     display: flex;
     margin-left: 50px;
@@ -66,7 +43,6 @@ main{
     border-left: solid 1px rgb(35, 127, 212);
     padding-left: 10px;
 }
-
 .logo{
     display: flex;
     flex-direction: column;
@@ -74,26 +50,146 @@ main{
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 15px;
-    line-height: 6px;
+    line-height: 6px; 
+}
 
+main{
+    grid-area: main ;
+    background-image: url(./img/aire.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:  center ; 
+   height: 100vh;
+  
     
+   
 }
 .logo span{
  font-size: 18px;
  font-weight: 700;
 }
-#presentacion{
+
+.presentacion{
+    flex-wrap: wrap;
     width: 350px;
-    height: 450px;
+    height: 400px;
     background-color:rgb(255,255,255,0.5);
     position: absolute;
     left: 100px;
     margin-top: 50px;
     border-radius: 10px;
     border:  solid 8px rgb(35, 127, 212); 
-    padding: 10px;     
-      
+    padding: 12px; 
+    line-height: 25px;    
 }
+.presentacion-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+.presentacion h2{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.presentacion p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* botón de la seccion de main */
+.btn {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgb(35, 127, 212);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .btn:hover {
+    background-color: rgb(35, 127, 212);
+    box-shadow: 0px 15px 20px rgb(35, 127, 212);
+    color: #fff;
+    transform: translateY(-7px);
+    font-weight: 700;
+  }
+  
+ .btn:active {
+    transform: translateY(-1px);
+  }
+
+
+
+  footer{
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    padding-right: 30px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #21618C ;
+    color: #FDFEFE ;
+    grid-area: footer;
+    border-radius: 5px;
+    padding-bottom: 20px;
+   
+   
+   
+}
+.contacto{
+    line-height: 15px;
+}
+.contacto h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 25px;
+}
+ul{
+    list-style: none;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.list-redes{
+    display: flex; 
+}
+
+.list-redes li{
+    margin-right: 20px;
+}
+
+.btn-contacto{
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 2rem;
+    
+}
+
+.btn-contacto:hover{
+    background-color: rgb(35, 127, 212);
+    border: none;
+    color: #fff;
+}
+
 
 #pagina-contacto h1 {
     text-decoration: underline; /* Subrayado solo en las palabras */
