@@ -206,6 +206,7 @@ ul{
     border: solid 1px;
     width: 250px;
     height: 250px;
+    opacity: 85%;
 }
 .instalacion{
     display: inherit;
@@ -213,24 +214,15 @@ ul{
     position:relative;
     right: 20px;
 }
-.venta{
-    display: flex;
-    align-items: end;
-    gap: 5px;
-    
-}
-.venta img{
-    border-radius: 999px;
-    border: solid 1px;
-    width: 250px;
-    height: 250px;
+.instalacion h5{
+    font-weight: 400;
+    position: absolute;
+    margin-left: 50px;
+    padding-top: 122px;
+    color: rgb(79, 208, 252);
+    z-index: 1;
 }
 
-
-.venta img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
 .instalacion img:hover{
     cursor: pointer;
     transform: scale(1.1);
@@ -310,3 +302,21 @@ iframe{
     from{opacity: 0%;}
     to{opacity: 100%;}
 }
+.clima{
+    position: relative;
+    left: 750px;
+    top: 90px;
+    font-size: 70px;
+    font-weight: 700;
+    animation-name: aire2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+@keyframes aire2{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+    from{left: 900px;}
+    to{left: 750px;}
+}
+    
+
