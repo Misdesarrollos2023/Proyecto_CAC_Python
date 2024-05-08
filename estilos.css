@@ -222,6 +222,9 @@ ul{
     color: rgb(79, 208, 252);
     z-index: 1;
 }
+.instalacion h5:hover{
+    cursor: pointer;
+}
 
 .instalacion img:hover{
     cursor: pointer;
@@ -318,5 +321,3 @@ iframe{
     from{left: 900px;}
     to{left: 750px;}
 }
-    
-
