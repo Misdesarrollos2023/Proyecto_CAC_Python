@@ -1,3 +1,42 @@
+
+/* Estilos para el contenedor de botones */
+#pagina-contacto .contenedor-botones {
+    display: flex;
+    flex-wrap: wrap; /* Si se achica mucho el contenido se acomoda en columnas */
+    justify-content: center; /* Centrar los botones */
+    width: 100%;
+    margin-top: 15px; /* Espacio entre los campos y los botones */
+    padding: 10px; /* Espacio interno para los botones */
+}
+
+#pagina-contacto .contenedor-botones button {
+    /* Mantenemos las propiedades que ya están definidas */
+    font-weight: bold; 
+    margin: 0 10%; /* Espacio entre los botones */
+    text-align: center; /* Centro el texto dentro de los botones */
+    
+    /* Modificamos el tamaño del padding para hacer los botones más pequeños */
+    padding: 0.8em 2em;
+    /* Modificamos el tamaño de la fuente */
+    font-size: 10px;
+}
+
+#pagina-contacto .nombre-apellido,
+#pagina-contacto .email-telefono {
+    text-align: center;
+    align-items: center;
+    background-color: grey; /* Color de fondo */
+    display: flex; /* Mostrar los elementos en línea */
+    flex-wrap: wrap; /* si es muy chica la web, se baja el contenido a columnas */
+    margin: 15px 10px; /* Espacio superior e inferior */
+}
+
+#pagina-contacto .labels-contacto {
+    font-weight: bold;
+    margin-bottom: 10px; /* Espacio entre los labels */
+}
+
+/* Estilos para el cuerpo y la estructura de la página */
 body {
     overflow-x: hidden;
     display: grid;
@@ -8,9 +47,9 @@ body {
         'head head '
         'main main'
         'footer footer';
-
 }
 
+/* Estilos para el encabezado */
 header {
     margin-top: 0;
     display: flex;
@@ -57,6 +96,7 @@ header {
     line-height: 6px;
 }
 
+/* Estilos para el contenido principal */
 main {
     grid-area: main;
     background-image: url(./img/aire.jpg);
@@ -64,25 +104,17 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-
-
-
 }
 
-.logo span {
-    font-size: 18px;
-    font-weight: 700;
-}
-
+/* Estilos para las secciones de presentación */
 .presentacion,
 .presentacion2,
 .presentacion3 {
     flex-wrap: wrap;
     width: 350px;
     height: 400px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    left: 100px;
     margin-top: 50px;
     border-radius: 10px;
     border: solid 8px rgb(35, 127, 212);
@@ -97,9 +129,7 @@ main {
 }
 
 .presentacion3 {
-    
     height: 450px;
-    
 }
 
 .presentacion-container,
@@ -109,15 +139,12 @@ main {
     align-items: center;
 }
 
-
 .presentacion h2,
 .presentacion2 h2 {
     font-size: 25px;
     font-weight: 700;
     text-align: center;
-
 }
-
 
 .presentacion p,
 .presentacion2 p {
@@ -125,8 +152,7 @@ main {
     font-weight: 500;
 }
 
-
-/* botón de la seccion de main */
+/* Estilos para los botones */
 .btn {
     padding: 1.3em 3em;
     font-size: 12px;
@@ -155,8 +181,7 @@ main {
     transform: translateY(-1px);
 }
 
-
-
+/* Estilos para el pie de página */
 footer {
     margin-top: 5.2rem;
     flex-wrap: wrap;
@@ -169,9 +194,6 @@ footer {
     grid-area: footer;
     border-radius: 5px;
     padding-bottom: 5px;
-
-
-
 }
 
 .contacto {
@@ -194,7 +216,7 @@ ul {
     font-size: 18px;
 }
 
-.vineta{
+.vineta {
     list-style: circle;
     line-height: 22px;
     font-size: 18px;
@@ -216,7 +238,6 @@ ul {
     background-color: #fff;
     border-radius: 5px;
     margin-left: 2rem;
-
 }
 
 .btn-contacto:hover {
@@ -225,7 +246,7 @@ ul {
     color: #fff;
 }
 
-
+/* Estilos específicos para la página de contacto */
 #pagina-contacto h1 {
     text-decoration: underline;
     /* Subrayado solo en las palabras */
@@ -236,8 +257,7 @@ ul {
     background-color: blue;
 }
 
-
-
+/* Estilos para las imágenes */
 .instalacion img {
     border-radius: 999px;
     border: solid 1px;
@@ -282,7 +302,6 @@ ul {
     font-style: normal;
     font-size: 40px;
     background-image: url(./img/aire.jpg);
-
 }
 
 #ubi_main {
@@ -306,7 +325,7 @@ ul {
     font-size: larger;
     /* font-style: italic; */
     font-weight: 600;
-    font-family: monospace
+    font-family: monospace;
 }
 
 #ubi {
@@ -325,7 +344,6 @@ h1 {
     padding-top: 30px;
     align-items: center;
     font-size: 30px;
-
 }
 
 .list li {
