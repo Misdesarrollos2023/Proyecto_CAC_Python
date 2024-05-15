@@ -379,3 +379,99 @@ iframe {
         left: 750px;
     }
 }
+
+#contactoFormContainer {
+    width: 70%; 
+    margin: 0 auto; 
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contactoForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+#contactoForm .form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contactoForm .form-group {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos al centro del contenedor */
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+#contactoForm .form-group label {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+#contactoForm .form-group input[type="text"],
+#contactoForm .form-group input[type="email"],
+#contactoForm .form-group input[type="tel"] {
+    width: 100%;
+    margin-top: 5px;
+    height: 30px; /* Aumentar la altura del input para mejor visibilidad */
+}
+
+#contactoForm .form-group textarea {
+    width: calc(100% - 10px);
+    margin-top: 5px;
+    align-self: center;
+}
+
+#contactoForm #nombre,
+#contactoForm #apellido,
+#contactoForm #comentarios,
+#contactoForm #localidad,
+#contactoForm #email,
+#contactoForm #telefono {
+    flex-basis: calc(100% - 10px);
+    margin-top: 10px;
+}
+
+#contactoForm .form-group input[type="radio"] {
+    display: inline;
+}
+
+#contactoForm button {
+    margin-top: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+  #contactoForm .form-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #contactoForm .form-group label {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  #contactoForm .form-group input[type="text"],
+  #contactoForm .form-group input[type="email"],
+  #contactoForm .form-group input[type="tel"] {
+    width: 20vw;
+  }
+
+  #contactoForm .form-group input[type="radio"] {
+    margin-right: 20px;
+  }
+}
