@@ -39,11 +39,11 @@ header {
 
 .nav_contacto {
     display: flex;
+    align-items: center;
     margin-left: 50px;
     position: absolute;
     right: 30px;
     top: 20px;
-    align-items: center;
     border-left: solid 1px rgb(35, 127, 212);
     padding-left: 10px;
 }
@@ -475,3 +475,4 @@ iframe {
     margin-right: 20px;
   }
 }
+
