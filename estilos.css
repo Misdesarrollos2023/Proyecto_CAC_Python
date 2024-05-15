@@ -1,105 +1,130 @@
-body{
-   overflow-x: hidden;
+body {
+    overflow-x: hidden;
     display: grid;
     gap: 5px;
-    grid-template-columns: 1fr 3fr ;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 6fr 2fr;
-    grid-template-areas: 
-    'head head '
-    'main main' 
-    'footer footer' ;
-  
+    grid-template-areas:
+        'head head '
+        'main main'
+        'footer footer';
+
 }
-header{
+
+header {
     margin-top: 0;
     display: flex;
     align-items: center;
-    border-bottom: solid 1px ;
-    grid-area: head ;
+    border-bottom: solid 1px;
+    grid-area: head;
     padding: 5px;
 }
 
-.menu{
+.menu {
     text-decoration: none;
     color: black;
     margin-right: 20px;
 }
-.menu:hover{
-   font-size: large;
-   color: rgb(79, 208, 252);
+
+.menu:hover {
+    font-size: large;
+    color: rgb(79, 208, 252);
 }
 
-#empresa{
+#empresa {
     color: rgb(79, 208, 252);
-    margin-right: 80px
-    ;
+    margin-right: 80px;
 }
-.nav_contacto{
+
+.nav_contacto {
     display: flex;
     margin-left: 50px;
-    position: absolute ;
-    right: 30px ;
+    position: absolute;
+    right: 30px;
     top: 20px;
     align-items: center;
     border-left: solid 1px rgb(35, 127, 212);
     padding-left: 10px;
 }
-.logo{
+
+.logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 10px;
     padding-right: 15px;
     padding-top: 15px;
-    line-height: 6px; 
+    line-height: 6px;
 }
 
-main{
-    grid-area: main ;
+main {
+    grid-area: main;
     background-image: url(./img/aire.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position:  center ; 
+    background-position: center;
     height: 100vh;
-   
-    
-   
-}
-.logo span{
- font-size: 18px;
- font-weight: 700;
+
+
+
 }
 
-.presentacion{
+.logo span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.presentacion,
+.presentacion2,
+.presentacion3 {
     flex-wrap: wrap;
     width: 350px;
     height: 400px;
-    background-color:rgb(255,255,255,0.5);
+    background-color: rgb(255, 255, 255, 0.5);
     position: absolute;
     left: 100px;
     margin-top: 50px;
     border-radius: 10px;
-    border:  solid 8px rgb(35, 127, 212); 
-    padding: 12px; 
-    line-height: 25px;    
+    border: solid 8px rgb(35, 127, 212);
+    padding: 12px;
+    line-height: 25px;
 }
-.presentacion-container{
+
+.presentacion2 {
+    width: 50%;
+    height: 500px;
+    left: 50px;
+}
+
+.presentacion3 {
+    
+    height: 450px;
+    
+}
+
+.presentacion-container,
+.presentacion-container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+}
 
 
-.presentacion h2{
+.presentacion h2,
+.presentacion2 h2 {
     font-size: 25px;
     font-weight: 700;
     text-align: center;
-    
+
 }
-.presentacion p{
+
+
+.presentacion p,
+.presentacion2 p {
     font-size: 18px;
     font-weight: 500;
 }
+
 
 /* botón de la seccion de main */
 .btn {
@@ -116,65 +141,74 @@ main{
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: rgb(35, 127, 212);
     box-shadow: 0px 15px 20px rgb(35, 127, 212);
     color: #fff;
     transform: translateY(-7px);
     font-weight: 700;
-  }
-  
- .btn:active {
+}
+
+.btn:active {
     transform: translateY(-1px);
-  }
+}
 
 
 
-  footer{
+footer {
     margin-top: 5.2rem;
     flex-wrap: wrap;
     padding-right: 30px;
     padding-left: 10px;
     display: flex;
     justify-content: space-between;
-    background-color: #21618C ;
-    color: #FDFEFE ;
+    background-color: #21618C;
+    color: #FDFEFE;
     grid-area: footer;
     border-radius: 5px;
     padding-bottom: 5px;
-   
-   
-   
+
+
+
 }
-.contacto{
+
+.contacto {
     line-height: 15px;
 }
-.contacto h1{
+
+.contacto h1 {
     font-size: 40px;
     text-align: center;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     font-size: 25px;
 }
-ul{
+
+ul {
     list-style: none;
     line-height: 22px;
     font-size: 18px;
 }
 
-.list-redes{
-    display: flex; 
+.vineta{
+    list-style: circle;
+    line-height: 22px;
+    font-size: 18px;
 }
 
-.list-redes li{
+.list-redes {
+    display: flex;
+}
+
+.list-redes li {
     margin-right: 20px;
 }
 
-.btn-contacto{
+.btn-contacto {
     padding: 10px 15px;
     font-size: 20px;
     cursor: pointer;
@@ -182,10 +216,10 @@ ul{
     background-color: #fff;
     border-radius: 5px;
     margin-left: 2rem;
-    
+
 }
 
-.btn-contacto:hover{
+.btn-contacto:hover {
     background-color: rgb(35, 127, 212);
     border: none;
     color: #fff;
@@ -193,28 +227,33 @@ ul{
 
 
 #pagina-contacto h1 {
-    text-decoration: underline; /* Subrayado solo en las palabras */
-    display: inline-block; /* Hacer que el h1 se comporte como un bloque en línea */
-    text-align: center; /* Centrar en la línea de la página */
+    text-decoration: underline;
+    /* Subrayado solo en las palabras */
+    display: inline-block;
+    /* Hacer que el h1 se comporte como un bloque en línea */
+    text-align: center;
+    /* Centrar en la línea de la página */
     background-color: blue;
 }
-    
-    
-    
-.instalacion img{
+
+
+
+.instalacion img {
     border-radius: 999px;
     border: solid 1px;
     width: 250px;
     height: 250px;
     opacity: 85%;
 }
-.instalacion{
+
+.instalacion {
     display: inherit;
     gap: 5px;
-    position:relative;
+    position: relative;
     right: 20px;
 }
-.instalacion h5{
+
+.instalacion h5 {
     font-weight: 400;
     position: absolute;
     margin-left: 50px;
@@ -226,12 +265,12 @@ ul{
     cursor: pointer;
 }
 
-.instalacion img:hover{
+.instalacion img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-.imagenes{
+.imagenes {
     margin: 5px;
     padding: 5px;
     position: relative;
@@ -246,9 +285,10 @@ ul{
     font-style: normal;
     font-size: 40px;
     background-image: url(./img/aire.jpg);
-   
+
 }
-#ubi_main{
+
+#ubi_main {
     background-image: url(./img/aire.jpg);
     background-repeat: repeat;
     background-size: inherit;
@@ -257,10 +297,12 @@ ul{
     justify-content: space-around;
     padding: 30px;
 }
-#ubi_footer{
+
+#ubi_footer {
     margin-top: 0px;
 }
-.como_llegar{
+
+.como_llegar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,30 +311,38 @@ ul{
     font-weight: 600;
     font-family: monospace
 }
-#ubi{
+
+#ubi {
     position: relative;
     top: 75px;
     left: 40px;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 40px;
 }
-.list{
+
+.list {
     display: flex;
     padding-top: 30px;
     align-items: center;
     font-size: 30px;
-  
+
 }
-.list li{
+
+.list li {
     margin-left: 40px;
 }
-iframe{
+
+iframe {
     border-radius: 25px;
     border: solid 1px;
 }
-.aire_main{
+
+.aire_main,
+.aire_main2,
+.aire_main3 {
     position: absolute;
     top: 150px;
     width: 70%;
@@ -301,11 +351,30 @@ iframe{
     animation-duration: 10s;
     animation-delay: 1s;
 }
-@keyframes aire{
-    from{opacity: 0%;}
-    to{opacity: 100%;}
+
+.aire_main2 {
+    width: 35%;
+    left: 1100px;
+    top: 200px;
 }
-.clima{
+
+.aire_main3 {
+    width: 60%;
+    left: 600px;
+    top: 250px;
+}
+
+@keyframes aire {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.clima {
     position: relative;
     left: 750px;
     top: 90px;
@@ -321,3 +390,5 @@ iframe{
     from{left: 900px;}
     to{left: 750px;}
 }
+    
+
