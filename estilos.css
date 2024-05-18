@@ -1,17 +1,16 @@
-body {
-    overflow-x: hidden;
+body{
+   overflow-x: hidden;
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 6fr 2fr;
-    grid-template-areas:
-        'head head '
-        'main main'
-        'footer footer';
-
+    grid-template-areas: 
+    'head head '
+    'main main' 
+    'footer footer' ;
+  
 }
-
-header {
+header{
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -38,11 +37,11 @@ header {
 
 .nav_contacto {
     display: flex;
+    align-items: center;
     margin-left: 50px;
     position: absolute;
     right: 30px;
     top: 20px;
-    align-items: center;
     border-left: solid 1px rgb(35, 127, 212);
     padding-left: 10px;
 }
@@ -57,76 +56,54 @@ header {
     line-height: 6px;
 }
 
-main {
-    grid-area: main;
+main{
+    grid-area: main ;
     background-image: url(./img/aire.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-
-
-
+   
+    
+   
+}
+.logo span{
+ font-size: 18px;
+ font-weight: 700;
 }
 
-.logo span {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.presentacion,
-.presentacion2,
-.presentacion3 {
+.presentacion{
     flex-wrap: wrap;
     width: 350px;
     height: 400px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color:rgb(255,255,255,0.5);
     position: absolute;
-    left: 100px;
     margin-top: 50px;
     border-radius: 10px;
     border: solid 8px rgb(35, 127, 212);
     padding: 12px;
     line-height: 25px;
 }
-
-.presentacion2 {
-    width: 50%;
-    height: 500px;
-    left: 50px;
-}
-
-.presentacion3 {
-    
-    height: 450px;
-    
-}
-
-.presentacion-container,
-.presentacion-container2 {
+.presentacion-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.presentacion h2,
-.presentacion2 h2 {
+.presentacion h2{
     font-size: 25px;
     font-weight: 700;
     text-align: center;
-
+    
 }
-
-
-.presentacion p,
-.presentacion2 p {
+.presentacion p{
     font-size: 18px;
     font-weight: 500;
 }
 
 
-/* botón de la seccion de main */
+/* Estilos para los botones */
 .btn {
     padding: 1.3em 3em;
     font-size: 12px;
@@ -157,7 +134,7 @@ main {
 
 
 
-footer {
+  footer{
     margin-top: 5.2rem;
     flex-wrap: wrap;
     padding-right: 30px;
@@ -169,9 +146,9 @@ footer {
     grid-area: footer;
     border-radius: 5px;
     padding-bottom: 5px;
-
-
-
+   
+   
+   
 }
 
 .contacto {
@@ -194,14 +171,8 @@ ul {
     font-size: 18px;
 }
 
-.vineta{
-    list-style: circle;
-    line-height: 22px;
-    font-size: 18px;
-}
-
-.list-redes {
-    display: flex;
+.list-redes{
+    display: flex; 
 }
 
 .list-redes li {
@@ -216,7 +187,7 @@ ul {
     background-color: #fff;
     border-radius: 5px;
     margin-left: 2rem;
-
+    
 }
 
 .btn-contacto:hover {
@@ -225,7 +196,7 @@ ul {
     color: #fff;
 }
 
-
+/* Estilos específicos para la página de contacto */
 #pagina-contacto h1 {
     text-decoration: underline;
     /* Subrayado solo en las palabras */
@@ -235,10 +206,10 @@ ul {
     /* Centrar en la línea de la página */
     background-color: blue;
 }
-
-
-
-.instalacion img {
+    
+    
+    
+.instalacion img{
     border-radius: 999px;
     border: solid 1px;
     width: 250px;
@@ -285,7 +256,7 @@ ul {
     font-style: normal;
     font-size: 40px;
     background-image: url(./img/aire.jpg);
-
+   
 }
 
 #ubi_main {
@@ -309,7 +280,7 @@ ul {
     font-size: larger;
     /* font-style: italic; */
     font-weight: 600;
-    font-family: monospace
+    font-family: monospace;
 }
 
 #ubi {
@@ -328,7 +299,7 @@ h1 {
     padding-top: 30px;
     align-items: center;
     font-size: 30px;
-
+  
 }
 
 .list li {
@@ -384,11 +355,118 @@ iframe {
     animation-duration: 5s;
     animation-delay: 1s;
 }
-@keyframes aire2{
-    from{opacity: 0%;}
-    to{opacity: 100%;}
-    from{left: 900px;}
-    to{left: 750px;}
+
+@keyframes aire2 {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+
+    from {
+        left: 900px;
+    }
+
+    to {
+        left: 750px;
+    }
 }
-    
+
+#contactoFormContainer {
+    width: 70%; 
+    margin: 0 auto; 
+    margin-top: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contactoForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+#contactoForm .form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contactoForm .form-group {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos al centro del contenedor */
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+#contactoForm .form-group label {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+#contactoForm .form-group input[type="text"],
+#contactoForm .form-group input[type="email"],
+#contactoForm .form-group input[type="tel"] {
+    width: 100%;
+    margin-top: 5px;
+    height: 30px; /* Aumentar la altura del input para mejor visibilidad */
+}
+
+#contactoForm .form-group textarea {
+    width: calc(100% - 10px);
+    margin-top: 5px;
+    align-self: center;
+}
+
+#contactoForm #nombre,
+#contactoForm #apellido,
+#contactoForm #comentarios,
+#contactoForm #localidad,
+#contactoForm #email,
+#contactoForm #telefono {
+    flex-basis: calc(100% - 10px);
+    margin-top: 10px;
+}
+
+#contactoForm .form-group input[type="radio"] {
+    display: inline;
+}
+
+#contactoForm button {
+    margin-top: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+  #contactoForm .form-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #contactoForm .form-group label {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  #contactoForm .form-group input[type="text"],
+  #contactoForm .form-group input[type="email"],
+  #contactoForm .form-group input[type="tel"] {
+    width: 20vw;
+  }
+
+  #contactoForm .form-group input[type="radio"] {
+    margin-right: 20px;
+  }
+}
 
