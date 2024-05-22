@@ -1,16 +1,18 @@
-body{
-   overflow-x: hidden;
+/* Estilos para el cuerpo y la estructura de la página */
+body {
+    overflow-x: hidden;
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 6fr 2fr;
-    grid-template-areas: 
-    'head head '
-    'main main' 
-    'footer footer' ;
-  
+    grid-template-areas:
+        'head head '
+        'main main'
+        'footer footer';
 }
-header{
+
+/* Estilos para el encabezado */
+header {
     margin-top: 0;
     display: flex;
     align-items: center;
@@ -56,52 +58,62 @@ header{
     line-height: 6px;
 }
 
-main{
-    grid-area: main ;
+/* Estilos para el contenido principal */
+main {
+    grid-area: main;
     background-image: url(./img/aire.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-   
-    
-   
-}
-.logo span{
- font-size: 18px;
- font-weight: 700;
 }
 
-.presentacion{
+/* Estilos para las secciones de presentación */
+.presentacion,
+.presentacion2,
+.presentacion3 {
     flex-wrap: wrap;
     width: 350px;
     height: 400px;
-    background-color:rgb(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     margin-top: 50px;
+    margin-left: 30px;
     border-radius: 10px;
     border: solid 8px rgb(35, 127, 212);
     padding: 12px;
     line-height: 25px;
 }
-.presentacion-container{
+
+.presentacion2 {
+    width: 50%;
+    height: 500px;
+    left: 50px;
+}
+
+.presentacion3 {
+    height: 450px;
+}
+
+.presentacion-container,
+.presentacion-container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.presentacion h2{
+.presentacion h2,
+.presentacion2 h2 {
     font-size: 25px;
     font-weight: 700;
     text-align: center;
-    
 }
-.presentacion p{
+
+.presentacion p,
+.presentacion2 p {
     font-size: 18px;
     font-weight: 500;
 }
-
 
 /* Estilos para los botones */
 .btn {
@@ -132,9 +144,8 @@ main{
     transform: translateY(-1px);
 }
 
-
-
-  footer{
+/* Estilos para el pie de página */
+footer {
     margin-top: 5.2rem;
     flex-wrap: wrap;
     padding-right: 30px;
@@ -146,9 +157,6 @@ main{
     grid-area: footer;
     border-radius: 5px;
     padding-bottom: 5px;
-   
-   
-   
 }
 
 .contacto {
@@ -171,8 +179,14 @@ ul {
     font-size: 18px;
 }
 
-.list-redes{
-    display: flex; 
+.vineta {
+    list-style: circle;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.list-redes {
+    display: flex;
 }
 
 .list-redes li {
@@ -187,7 +201,6 @@ ul {
     background-color: #fff;
     border-radius: 5px;
     margin-left: 2rem;
-    
 }
 
 .btn-contacto:hover {
@@ -206,10 +219,9 @@ ul {
     /* Centrar en la línea de la página */
     background-color: blue;
 }
-    
-    
-    
-.instalacion img{
+
+/* Estilos para las imágenes */
+.instalacion img {
     border-radius: 999px;
     border: solid 1px;
     width: 250px;
@@ -232,9 +244,6 @@ ul {
     color: rgb(79, 208, 252);
     z-index: 1;
 }
-.instalacion h5:hover{
-    cursor: pointer;
-}
 
 .instalacion img:hover {
     cursor: pointer;
@@ -256,10 +265,9 @@ ul {
     font-style: normal;
     font-size: 40px;
     background-image: url(./img/aire.jpg);
-   
 }
 
-#ubi_main {
+#ubi_main,#contacto_main{
     background-image: url(./img/aire.jpg);
     background-repeat: repeat;
     background-size: inherit;
@@ -269,7 +277,7 @@ ul {
     padding: 30px;
 }
 
-#ubi_footer {
+#ubi_footer,#con_foot {
     margin-top: 0px;
 }
 
@@ -299,7 +307,6 @@ h1 {
     padding-top: 30px;
     align-items: center;
     font-size: 30px;
-  
 }
 
 .list li {
@@ -469,4 +476,71 @@ iframe {
     margin-right: 20px;
   }
 }
-
+@media only screen and (max-width:600px){
+    .nav_contacto{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+    
+    .aire_main{
+        display: none;
+    }
+    .clima{
+        display: none;
+    }
+    .imagenes{
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-top: 30px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 0%;
+        
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+   
+    }
+    @media (min-width:600px) and (max-width:1115px){
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        nav{
+            display: flex;
+        }
+        .clima{
+            display: none;
+        }
+        .presentacion{
+            margin-left:30%
+        }
+        .nav_contacto{
+            display: none;
+        }
+        .imagenes{
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .aire_main{
+            display: none;
+        }
+        footer{
+            margin-top: 2rem;
+        }
+    }
+    
