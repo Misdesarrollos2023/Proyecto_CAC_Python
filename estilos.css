@@ -78,6 +78,7 @@ main {
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     margin-top: 50px;
+    margin-left: 30px;
     border-radius: 10px;
     border: solid 8px rgb(35, 127, 212);
     padding: 12px;
@@ -170,6 +171,9 @@ footer {
 .titulo {
     text-align: center;
     font-size: 25px;
+}
+#titulo_contacto{
+    color: rgb(79, 208, 252);
 }
 
 ul {
@@ -266,7 +270,7 @@ ul {
     background-image: url(./img/aire.jpg);
 }
 
-#ubi_main {
+#ubi_main,#contacto_main{
     background-image: url(./img/aire.jpg);
     background-repeat: repeat;
     background-size: inherit;
@@ -276,7 +280,7 @@ ul {
     padding: 30px;
 }
 
-#ubi_footer {
+#ubi_footer,#con_foot {
     margin-top: 0px;
 }
 
@@ -330,8 +334,8 @@ iframe {
 }
 
 .aire_main2 {
-    width: 35%;
-    left: 1100px;
+    width: 30%;
+    left: 800px;
     top: 200px;
 }
 
@@ -475,4 +479,71 @@ iframe {
     margin-right: 20px;
   }
 }
+@media only screen and (max-width:600px){
+    .nav_contacto{
+        display: none;
+    }
+    header{
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 5px;
+    }
+    
+    .aire_main{
+        display: none;
+    }
+    .clima{
+        display: none;
+    }
+    .imagenes{
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-top: 30px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 0%;
+        
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+    }
+   
+    }
+    @media (min-width:600px) and (max-width:1115px){
+        header{
+            display: flex;
+            flex-direction: column;
+        }
+        nav{
+            display: flex;
+        }
+        .clima{
+            display: none;
+        }
+        .presentacion{
+            margin-left:30%
+        }
+        .nav_contacto{
+            display: none;
+        }
+        .imagenes{
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .aire_main{
+            display: none;
+        }
+        footer{
+            margin-top: 2rem;
+        }
+    }
 
